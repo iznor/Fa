@@ -4,7 +4,7 @@
   "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6442641&assignment_repo_type=AssignmentRepo)",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,15 @@
   },
   "homepage": "https://github.com/DCS-Shenkar-2022/assignment9---ex2-express-mongo-heroku-iznor#readme",
   "dependencies": {
-    "dotenv": "^10.0.0",
+    "axios": "^0.24.0",
     "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.13",
+    "mongoose-sequence": "^5.3.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
     "nodemon": "^2.0.15"
   }
 }
