@@ -2,9 +2,15 @@
     {
         "widget_id": 1,
         "artist_id": 1,
+<<<<<<< HEAD
         "song_id":1,
         "user_id": 1,
         "genre_id": 1,
         "relase_year": 2020
+=======
+        "user_id": 1,
+        "genre_id": 1,
+        "relase_year": 2021
+>>>>>>> rest-node
     }
 ]

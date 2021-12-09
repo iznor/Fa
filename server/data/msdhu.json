@@ -1,0 +1,22 @@
+{
+    "artists": [
+        {
+            "artist_name": "",
+            "songs": [
+                {
+                    "song_name": "",
+                    "genre": [
+                        "",
+                        ""
+                    ],
+                    "release_date": ""
+                }
+            ],
+            "bio": "",
+            "news": {
+                "link": "",
+                "description": ""
+            }
+        }
+    ]
+}

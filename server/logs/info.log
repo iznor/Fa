@@ -1,0 +1,44 @@
+
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-05 02:18:23 AM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-05 02:18:24 AM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-05 02:20:00 AM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-05 02:20:01 AM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:53:11 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 12:53:13 PM +0200"}
+{"level":"info","message":"Get Artist number:1","timestamp":"2021-12-08 12:55:05 PM +0200"}
+{"level":"info","message":"Get all Artists","timestamp":"2021-12-08 12:55:21 PM +0200"}
+{"level":"info","message":"Success to Get all artists","timestamp":"2021-12-08 12:55:21 PM +0200"}
+{"level":"info","message":"Get all Genres","timestamp":"2021-12-08 12:55:38 PM +0200"}
+{"level":"info","message":"Success to Get all Genres","timestamp":"2021-12-08 12:55:38 PM +0200"}
+{"level":"info","message":"Get Genre number:1","timestamp":"2021-12-08 12:55:43 PM +0200"}
+{"level":"info","message":"Get Song by genre:1","timestamp":"2021-12-08 12:56:10 PM +0200"}
+{"level":"info","message":"Success to Get Songs by genre number","timestamp":"2021-12-08 12:56:10 PM +0200"}
+{"level":"info","message":"Get Song by artist:1","timestamp":"2021-12-08 12:56:24 PM +0200"}
+{"level":"info","message":"Success to Get Songs by artist number","timestamp":"2021-12-08 12:56:24 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:58:56 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 12:58:57 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:59:03 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 12:59:04 PM +0200"}
+{"level":"info","message":"Get Song by genre:1","timestamp":"2021-12-08 12:59:16 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:59:28 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 12:59:29 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:59:30 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 12:59:31 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:59:51 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:59:52 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:59:53 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 12:59:54 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 12:59:56 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 12:59:57 PM +0200"}
+{"level":"info","message":"Get Song by genre:1","timestamp":"2021-12-08 01:00:00 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 01:00:22 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 01:00:23 PM +0200"}
+{"level":"info","message":"Get Song by genre:1","timestamp":"2021-12-08 01:00:24 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 01:00:43 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 01:00:44 PM +0200"}
+{"level":"info","message":"Get Song by artist:1","timestamp":"2021-12-08 01:00:48 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 01:00:58 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-08 01:00:59 PM +0200"}
+{"level":"info","message":"Get Song by artist:1","timestamp":"2021-12-08 01:01:16 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-09 04:24:06 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-09 04:24:08 PM +0200"}
