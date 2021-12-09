@@ -40,3 +40,5 @@
 {"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-08 01:00:58 PM +0200"}
 {"level":"info","message":"DB connected","timestamp":"2021-12-08 01:00:59 PM +0200"}
 {"level":"info","message":"Get Song by artist:1","timestamp":"2021-12-08 01:01:16 PM +0200"}
+{"level":"info","message":"Express server is running on port 3000","timestamp":"2021-12-09 04:24:06 PM +0200"}
+{"level":"info","message":"DB connected","timestamp":"2021-12-09 04:24:08 PM +0200"}
