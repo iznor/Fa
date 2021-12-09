@@ -20,7 +20,8 @@ exports.scraperController = {
             result = newartist.save()
             if (result) {
                 infologger.info(`Adding ${req.body.artists[i].artist_name} is successfully`);
-                res.json({ "message": `Adding ${req.body.artists[i].artist_name} is successfully` });
+                // res.json({ "message": `Adding ${req.body.artists[i].artist_name} is successfully` });
+                
             }
             else {
                 errorlogger.error(`Error Adding artist `);
@@ -33,7 +34,7 @@ exports.scraperController = {
                 result = newgenre.save()
                 if (result) {
                     infologger.info(`Adding ${req.body.artists.songs[j].genre[0]} is successfully`);
-                    res.json({ "message": `Adding ${req.body.artists.songs[j].genre[0]} is successfully` });
+                    // res.json({ "message": `Adding ${req.body.artists.songs[j].genre[0]} is successfully` });
                 }
                 else {
                     errorlogger.error(`Error Adding genre `);
@@ -46,7 +47,7 @@ exports.scraperController = {
                     result = newgenre.save()
                     if (result) {
                         infologger.info(`Adding ${req.body.artists.songs[j].genre[1]} is successfully`);
-                        res.json({ "message": `Adding ${req.body.artists.songs[j].genre[1]} is successfully` });
+                        // res.json({ "message": `Adding ${req.body.artists.songs[j].genre[1]} is successfully` });
                     }
                     else {
                         errorlogger.error(`Error Adding genre `);
@@ -79,7 +80,7 @@ exports.scraperController = {
                         result = newsong.save()
                         if (result) {
                             infologger.info(`Adding ${req.body.artists[i].songs[j].song_name} is successfully`);
-                            res.json({ "message": `Adding ${req.body.artists[i].songs[j].song_name} is successfully` });
+                            // res.json({ "message": `Adding ${req.body.artists[i].songs[j].song_name} is successfully` });
                         }
                         else {
                             errorlogger.error(`Error Adding song `);
@@ -95,6 +96,7 @@ exports.scraperController = {
         }
 
 
+       res.json({ "message": `Adding songs is successfully` });
 
     }
 }

@@ -6,7 +6,7 @@ exports.songController = {
         Song.find({$or:[{genre_id_one: req.params.id},{genre_id_two: req.params.id}]})
             .then((songbygenre) => {
 
-                if (songbygenre) {
+                if (songbygenre.length>0) {
                     infologger.info(`Success to Get Songs by genre number`);
                     res.json(songbygenre)
                 }
@@ -26,13 +26,13 @@ exports.songController = {
         Song.find({ artist_id: req.params.id })
             .then((songbyartist) => {
 
-                if (songbyartist) {
+                if (songbyartist.length>0) {
                     infologger.info(`Success to Get Songs by artist number`);
                     res.json(songbyartist)
                 }
                 else {
                     errorlogger.error("Wrong artist id please enter correct id");
-                    res.status(400).json({ "message": "Wrong genre id please enter correct id" });
+                    res.status(400).json({ "message": "Wrong artist id please enter correct id" });
                 }
 
             })
