@@ -35,7 +35,25 @@ exports.artistController = {
 
             });
     },
+    deleteartist(req, res) {
+        infologger.info("Delete a Artist");
+        Artist.deleteOne({ artist_id: req.params.id })
+            .then((result) => {
+                if (result.deletedCount > 0) {
+                    infologger.info(`Deleting Artist  is successfully`);
+                    res.json({ "message": `Deleting Artist  is successfully` });
+                }
+                else {
+                    errorlogger.error(`Artist no:${req.params.id} does not exists`);
+                    res.status(400).json({ "message": `Artist no:${req.params.id} does not exists` });
+                }
 
+            })
+            .catch(() => {
+                errorlogger.error(`Error Deleting Artist no:${req.params.id} `);
+                res.status(400).json({ "message": `Error Deleting Artist no:${req.params.id} ` });
+            });
+    }
 
 }
 

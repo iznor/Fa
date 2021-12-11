@@ -35,6 +35,25 @@ exports.genreController = {
 
             });
     },
+    deletegenre(req, res) {
+        infologger.info("Delete a Genre");
+        Genre.deleteOne({ genre_id: req.params.id })
+            .then((result) => {
+                if (result.deletedCount > 0) {
+                    infologger.info(`Deleting Genre  is successfully`);
+                    res.json({ "message": `Deleting Genre  is successfully` });
+                }
+                else {
+                    errorlogger.error(`Genre no:${req.params.id} does not exists`);
+                    res.status(400).json({ "message": `Genre no:${req.params.id} does not exists` });
+                }
+
+            })
+            .catch(() => {
+                errorlogger.error(`Error Deleting Genre no:${req.params.id} `);
+                res.status(400).json({ "message": `Error Deleting Genre no:${req.params.id} ` });
+            });
+    }
 
 
 }

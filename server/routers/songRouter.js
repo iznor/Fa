@@ -5,8 +5,9 @@ const songRouter = new Router();
 
 songRouter.get('/genre/:id',songController.getsongbygenre);
 songRouter.get('/artist/:id', songController.getsongbyartist); 
+songRouter.get('/', songController.getsongs); 
 // artistRouter.post('/', /*data*/Controller.add/*data*/);
 // artistRouter.put('/:id', /*data*/Controller.edit/*data*/);
-// artistRouter.delete('/:id', /*data*/Controller.delete/*data*/);
+songRouter.delete('/:id', songController.deletesong);
 
 module.exports = { songRouter };

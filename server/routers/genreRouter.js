@@ -7,6 +7,6 @@ genreRouter.get('/',genreController.getGenres);
 genreRouter.get('/:id', genreController.getGenre); 
 // artistRouter.post('/', /*data*/Controller.add/*data*/);
 // artistRouter.put('/:id', /*data*/Controller.edit/*data*/);
-// artistRouter.delete('/:id', /*data*/Controller.delete/*data*/);
+genreRouter.delete('/:id', genreController.deletegenre);
 
 module.exports = { genreRouter };

@@ -7,6 +7,6 @@ artistRouter.get('/',artistController.getartists);
 artistRouter.get('/:id', artistController.getartist); 
 // artistRouter.post('/', /*data*/Controller.add/*data*/);
 // artistRouter.put('/:id', /*data*/Controller.edit/*data*/);
-// artistRouter.delete('/:id', /*data*/Controller.delete/*data*/);
+artistRouter.delete('/:id', artistController.deleteartist);
 
 module.exports = { artistRouter};
