@@ -9,4 +9,4 @@ widgetRouter.post('/', widgetController.addwidget);
 widgetRouter.patch('/:id', widgetController.editwidget);
 widgetRouter.delete('/:id', widgetController.deletewidget);
 
-module.exports = { widgetRouter };
+module.exports = { widgetRouter }; 
