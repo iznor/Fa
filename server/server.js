@@ -18,11 +18,13 @@ const { scraperRouter } = require("./routers/scraperRouter");
 const { artistRouter } = require("./routers/artistRouter");
 const { genreRouter } = require("./routers/genreRouter");
 const { songRouter } = require("./routers/songRouter");
+const { widgetRouter } = require("./routers/widgetRouter");
 
 app.use('/api/scraper', scraperRouter);
 app.use('/api/artists', artistRouter);
 app.use('/api/genres' , genreRouter);
 app.use('/api/songs', songRouter);
+app.use('/api/widget', widgetRouter);
 
 // app.use('/api/'/*data*/, /*data*/Router);
 // router.use((req, res, next) => {
