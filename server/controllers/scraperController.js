@@ -33,7 +33,7 @@ exports.scraperController = {
                                 res.status(400).json({ "message": "Wrong Artist id please enter correct id" });
                             }
                         })
-                        .catch((err) => res.status(400).json(err));
+                        .catch((err) => res.status(400).json({ "message": `Error update artist ` }));
                 }
             } else {
 

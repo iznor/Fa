@@ -1,124 +1,129 @@
 * {
-  margin : 0;
+  margin: 0;
   padding: 0;
 }
 
 .delete-button {
   background-image: url("../assets/img/delete-button1.svg");
-  background-size : contain;
+  background-size: contain;
+  visibility: hidden;
 }
 
 .edit-button {
   background-image: url("../assets/img/edit-button.svg");
+  visibility: hidden;
 }
 
+// .back-button {
+//   background-image: url("../assets/img/back-button.svg");
+// }
+
 .back-button {
-  background-image: url("../assets/img/back-button.svg");
+  background-image: url("../assets/img/done-button.svg");
+  background-size: contain;
 }
 
 .done-button {
   background-image: url("../assets/img/done-button.svg");
-  background-size : contain;
+  background-size: contain;
 }
 
 .plus-button {
   background-image: url("../assets/img/plus-button.svg");
-  background-size : contain;
+  background-size: contain;
   cursor: pointer;
 }
 
-
-
 .dashboard {
-  display        : flex;
-  flex-wrap      : wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  justify-self   : center;
-  width          : 100%;
-  height         : 100%;
-  margin         : 0px auto;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
   // border: red solid 1px;
 }
 
 .widget {
   // border: red solid 1px;
-  width              : 270px;
-  height             : 270px;
-  margin             : 20px;
+  width: 270px;
+  height: 270px;
+  margin: 20px;
   // background-color: #99e2d0;
   // background: linear-gradient(red, transparent),linear-gradient(to top left, lime, transparent),linear-gradient(to top right, blue, transparent);
-  border-radius      : 7px;
-  box-shadow         : 1px 1px 12px #585858;
+  border-radius: 7px;
+  box-shadow: 1px 1px 12px #585858;
 
   .container {
-    width         : 100%;
-    height        : 100%;
-    display       : flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
+    margin: 0;
 
     .background {
-      border               : red solid 1px;
-      display              : inline-flex;
-      position             : absolute;
-      width                : 270px;
-      height               : 270px;
-      border-radius        : 7px;
-      background-size      : contain;
+      border: red solid 1px;
+      display: inline-flex;
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      border-radius: 7px;
+      background-size: contain;
       background-blend-mode: screen;
-      background-repeat    : no-repeat;
-      opacity              : 0.2;
-      z-index              : -1;
+      background-repeat: no-repeat;
+      opacity: 0.2;
+      z-index: -1;
     }
 
     h1 {
       // border: red solid 1px;
       text-align: center;
       justify-content: center;
-      font-size      : 20px;
+      font-size: 20px;
     }
 
     .content {
       // border: red solid 1px;
-      display        : flex;
+      display: flex;
       justify-content: center;
-      height         : 180px;
+      height: 180px;
     }
 
     .row {
       // border: blue solid 1px;
-      display        : flex;
-      flex-direction : row;
+      display: flex;
+      flex-direction: row;
       justify-content: space-between;
-      width          : 100%;
-      height         : 60px;
-      margin         : auto;
+      width: 100%;
+      height: 60px;
+      margin: auto;
     }
 
     .button-container {
-      display          : flex;
-      margin           : auto;
-      height           : 23px;
-      width            : 23px;
+      display: flex;
+      margin: auto;
+      height: 23px;
+      width: 23px;
       background-repeat: no-repeat;
-      z-index          : 1;
+      z-index: 1;
       cursor: pointer;
     }
   }
-
 }
 
 .edit {
   .container {
-    width         : 100%;
-    height        : 100%;
-    display       : flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
 
     // border: blue solid 1px;
     h1 {
       // border: blue solid 1px;
       flex-direction: row;
-      width         : 100%;
+      width: 100%;
     }
 
     .content {
@@ -127,32 +132,30 @@
       .row {
         // border: blue solid 1px;
         display: flex;
-        width  : 100%;
-        height : 35px;
+        width: 100%;
+        height: 35px;
       }
 
       .category {
         // border: blue solid 1px;
         display: flex;
-        margin : auto;
+        margin: auto;
       }
     }
   }
-
 }
 
 .append {
   .content {
     //   border: blue solid 1px;
-    height             : 100%;
-    width              : 80%;
+    height: 100%;
+    width: 80%;
     //   flex-direction: column;
-    margin             : 0 auto;
-    align-items        : center;
-    background-repeat  : no-repeat;
+    margin: 0 auto;
+    align-items: center;
+    background-repeat: no-repeat;
   }
 }
-
 
 .hide {
   display: none !important;

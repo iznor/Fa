@@ -1,7 +1,7 @@
 const Song = require('../models/songs');
 const { infologger, errorlogger } = require("../logs/logs");
 exports.songController = {
-    getsongs(req, res){
+    getsongs(req, res) {
         infologger.info("Get all songs");
         Song.find({})
             .then(song => {
@@ -17,10 +17,10 @@ exports.songController = {
     },
     getsongbygenre(req, res) {
         infologger.info(`Get Song by Song:${req.params.id}`);
-        Song.find({$or:[{Song_id_one: req.params.id},{Song_id_two: req.params.id}]})
+        Song.find({ $or: [{ genre_id_one: req.params.id }, { genre_id_two: req.params.id }] })
             .then((songbySong) => {
 
-                if (songbySong.length>0) {
+                if (songbySong.length > 0) {
                     infologger.info(`Success to Get Songs by Song number`);
                     res.json(songbySong)
                 }
@@ -40,7 +40,7 @@ exports.songController = {
         Song.find({ artist_id: req.params.id })
             .then((songbyartist) => {
 
-                if (songbyartist.length>0) {
+                if (songbyartist.length > 0) {
                     infologger.info(`Success to Get Songs by artist number`);
                     res.json(songbyartist)
                 }
