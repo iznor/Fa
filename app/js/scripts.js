@@ -12,7 +12,7 @@ $(".widget.append").click(() => {
             <div class="container visible">
                 <div class="background"></div>
                 <h1>New Widget</h1>
-                <div class="content">customize your widget !</div>
+                <div class="content front">Customize your widget now!</div>
                 <div class="row">
                     <div class="button-container delete-button"></div>
                     <div class="button-container edit-button"></div>
@@ -149,7 +149,49 @@ $(".widget.append").click(() => {
 
                 fetch(`https://fa-musicapi.herokuapp.com/api/songs/artist/${artistId}`)
                     .then((res) => res.json()).then(res => {
-                        console.log(res);
+                        let count = 0;
+                        for (let i = 0; i < res.length; i++) {
+                            if (parseInt(res[i].relase_date) >= 2020) {
+                                console.log(`${res[i].song_name} ${res[i].relase_date}`);
+                                //to do - edit the way we present the data in front widget
+                                if (count == 0) {
+                                    $(`.container.hide .content.front`)
+                                        .html('')
+                                }
+
+                                $(`.container.hide .content.front`)
+                                    .append(`
+                                <div class="row">
+                                    <div class="category">${res[i].song_name} ${res[i].link}</div>
+                                    <br>
+                                </div>
+                                `)
+                                ++count;
+
+                            } else if (parseInt(res[i].relase_date) >= 2018) {
+                                console.log(`${res[i].song_name} ${res[i].link}`);
+                                console.log($(`#w-${widgetId} .container.hide .content.front`).html)
+                                if (count == 0) {
+                                    $(`.container.hide .content.front`)
+                                        .html('')
+                                }
+                                $(`.container.hide .content.front`)
+                                    .append(`
+                                        <div class="row">
+                                            <div class="category">${res[i].song_name} ${res[i].link}</div>
+                                        </div>
+                                        <br>
+                                    `)
+                                ++count;
+                            }
+
+
+                            if (count == 3) {
+                                break;
+                            }
+
+                        }
+                        // console.log(res);
                     });
                 //to do - bring top 3 newest release_dates
 
