@@ -80,9 +80,11 @@ $(".widget.append").click(() => {
     $('.button-container.delete-button')
         .off()
         .click((element) => {
-            const widget = getWidget(element);
-            widget.parentElement.removeChild(widget)
-
+            const result = confirm("Warning! Delete ?");
+            if (result) {
+                const widget = getWidget(element);
+                widget.parentElement.removeChild(widget)
+            }
         })
     $('.button-container.back-button')
         .off()
