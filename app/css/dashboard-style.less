@@ -175,3 +175,27 @@
     display: none !important;
   }
 }
+////////////////////////////////////////////////////////////////////////////
+
+//ANIMATIONS
+
+.slide {
+  position: relative;
+  bottom: -310px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.5s;
+  animation: slide 0.5s forwards;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    bottom: 0;
+  }
+}

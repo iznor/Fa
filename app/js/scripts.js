@@ -8,7 +8,7 @@ $(".widget.append").click(() => {
     let bySelection;
     const thisWidgetId = widgetId;
     $(".dashboard").append(`\
-        <div id="w-${thisWidgetId}" class="widget">
+        <div id="w-${thisWidgetId}" class="widget slide">
             <div class="container visible">
                 <div class="background"></div>
                 <h1>New Widget</h1>
@@ -19,9 +19,9 @@ $(".widget.append").click(() => {
                 </div>
             </div>
            
-            <div class="container hide">
+            <div class="container hide slide">
                 <h1>Customize:</h1>
-                <div class="content">
+                <div class="content slide">
                     <div class="row">
                         <div class="category">Top</div>
                         <div class="category choice">
