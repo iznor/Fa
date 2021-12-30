@@ -118,7 +118,6 @@ $(".widget.append").click(() => {
                         <option value=${res[0].artist_id}>${res[0].artist_name}</option>
                         `)
                         res.slice(1, res.length).forEach(element => {
-                            console.log(widgetId + element.artist_name);
                             $(`#${widgetId - 1}-choose-what`).append(`
                             <option value=${element.artist_id}>${element.artist_name}</option>
                             `)
@@ -152,6 +151,7 @@ $(".widget.append").click(() => {
                     .then((res) => res.json()).then(res => {
                         console.log(res);
                     });
+                //to do - bring top 3 newest release_dates
 
             }
             else if (bySelection == 'genre') {
