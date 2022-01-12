@@ -100,7 +100,7 @@ $(".widget.append").click(() => {
 
     $(`#${widgetId}-choose-top`)
         .on("change", () => {
-            alert("FUCK");
+
         })
 
     $(`#${widgetId}-choose-by`)
