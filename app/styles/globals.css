@@ -1,0 +1,191 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), 
+      url('/fonts/Oswald-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: italic;
+  font-weight: 600;
+  src: local(''), 
+      url('/fonts/Oswald-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), 
+      url('/fonts/Oswald-DemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: italic;
+  font-weight: 500;
+  src: local(''), 
+      url('/fonts/Oswald-Demi-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: italic;
+  font-weight: 100;
+  src: local(''), 
+      url('/fonts/Oswald-Extra-LightItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 100;
+  src: local(''), 
+      url('/fonts/Oswald-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), 
+      url('/fonts/Oswald-Heavy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''), 
+      url('/fonts/Oswald-HeavyItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''), 
+      url('/fonts/Oswald-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: italic;
+  font-weight: 200;
+  src: local(''), 
+      url('/fonts/Oswald-LightItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), 
+      url('/fonts/Oswald-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''), 
+      url('/fonts/Oswald-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''), 
+      url('/fonts/Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: italic;
+  font-weight: 300;
+  src: local(''), 
+      url('/fonts/Oswald-RegularItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'HerrVon';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''), 
+      url('/fonts/HerrVonMuellerhoff-Regular.ttf') format('truetype');
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*** The new CSS Reset - version 1.4.5 (last updated 13.1.2022) ***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+ *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]){
+  display:none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly. */
+:where([contenteditable]){
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+body{
+  margin:0;
+  overflow-x: hidden;
+}
